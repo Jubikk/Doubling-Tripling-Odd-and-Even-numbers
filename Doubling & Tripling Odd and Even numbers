@@ -6,7 +6,13 @@ for line in file:
     numbers.append(int(line.strip()))
 file.close()
 
-
+even_numbers = []
+odd_numbers = []
+for number in numbers:
+    if number % 2 == 0:
+        even_numbers.append(number)
+    else:
+        odd_numbers.append(number)
 
 
 
