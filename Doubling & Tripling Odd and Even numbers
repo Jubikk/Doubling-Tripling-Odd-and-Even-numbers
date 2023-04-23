@@ -13,6 +13,18 @@ for number in numbers:
         even_numbers.append(number)
     else:
         odd_numbers.append(number)
+        
+double_file = open('double.txt', 'w')
+for number in even_numbers:
+    square = number ** 2
+    double_file.write(str(square) + '\n')
+double_file.close()
+
+triple_file = open('triple.txt', 'w')
+for number in odd_numbers:
+    cube = number ** 3
+    triple_file.write(str(cube) + '\n')
+triple_file.close()
 
 
 
